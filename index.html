@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/753915b697.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <main>
+        
+        <div class="containerWeather bg-gradient-to-t from-green-400 to-blue-500">
+            <h1 class="cabeceraTexto">Consulta del clima</h1>
+            <div class="inputs">
+                <input type="text" id="cityInput" placeholder="Escriba su ciudad">
+                <button onclick="weatherCities()" type="button" class="bg-gradient-to-r from-pink-400 to-pink-400 hover:from-pink-500 hover:to-yellow-500 ...">
+                    consultar clima
+                  </button>
+            </div>
+            <div class="weatherResults">
+                <div class="gridItem">
+                    <span>
+                        <i class="fa-regular fa-calendar"></i> Dia de Hoy :
+                        <span id="dia"></span>
+                    </span>
+                </div>
+                <div class="gridItem">
+                    <span>
+                        <i class="fa-solid fa-temperature-three-quarters"></i> Temperatura:
+                        <span id="temperatura"></span>
+
+                    </span>
+                </div>
+                <div class="gridItem">
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i> Ciudad:
+                        <span id="ciudad"></span>
+
+                    </span>
+                </div>
+                <div class="gridItem">
+                    <span>
+                        <i class="fa-solid fa-wind"></i> Viento:
+                        <span id="viento"></span>
+
+                    </span>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
